@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="#" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="construction" onclick="onNavItemClick('construction')">Construction</li>
+                    <li class="hover-link nav-item" id="realestate" onclick="onNavItemClick('realestate')">Real Estate</li>
+
+                   <!----<li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li> --->
+                </ul>
+            </div>
+            <div class="search-bar flex">          
+            <input id="search-date" type="text" class="date-input" placeholder="MM-DD-YYYY">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+   <div class="title">
+    <h1>Construction Updates By Location</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero commodi itaque temporibus voluptas quia mollitia deleniti. Et autem ratione quod eligendi expedita id non, eveniet repellat, veritatis dolor quas iste?
+    </p>
+   </div> 
+    <div class="india-map">
+        <img src="/assets/indiamap.svg" alt="map" />
+        
+        <div class="pin delhi">
+            <span>Delhi</span>
+                <div class="info-container">
+                    This is some additional information about Delhi.
+                </div>
+            </div>
+            
+        <div class="pin mp"> 
+            <span>Madhya Pradesh</span>
+            <div class="info-container">
+                This is some additional information about MP.
+            </div>
+            </div>
+
+        <div class="pin maharashtra">  
+                <span>Maharashtra</span>
+                <div class="info-container">
+                    This is some additional information about Maharashtra.
+                </div>
+                </div>
+            
+            <div class="pin ap">
+            <span>Andhra Pradesh</span>
+            <div class="info-container">
+                This is some additional information about AP.
+            </div>
+            </div>
+
+            <div class="pin assam"> 
+            <span>Assam</span>
+            <div class="info-container">
+                This is some additional information about Assam.
+            </div>
+            </div>
+            
+            <div class="pin orissa"> 
+            <span>Orissa</span>
+            <div class="info-container">
+                This is some additional information about Orissa.
+            </div>
+            </div>
+            
+            <div class="pin bihar"> 
+            <span>Bihar</span>
+            <div class="info-container">
+                This is some additional information about Bihar.
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
