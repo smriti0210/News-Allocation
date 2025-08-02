@@ -24,9 +24,10 @@ Integration with official safety boards or local authorities.
 
 Real-time data feeds from news APIs or web scraping.
 
-# Tech Stack (Example)
+# Tech Stack 
 Frontend: HTML, CSS, JavaScript / React / Leaflet.js
 
 Backend: Node.js / Express / Firebase (or similar)
 
 Mapping API: Mapbox / Google Maps / OpenStreetMap
+
